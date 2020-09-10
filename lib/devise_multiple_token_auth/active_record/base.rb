@@ -8,7 +8,7 @@ module DeviseMultipleTokenAuth
       module ClassMethods
         def devise_token_authenticatable
           class_eval do
-            has_many :devices, class_name: "DeviseMultipleTokenAuth::Device", dependent: :destroy
+            has_many :devices, class_name: "DeviseMultipleTokenAuth::Device"
             def create_device
               DeviseMultipleTokenAuth::Device.destroy_expired
               new_device = Device.new
@@ -21,10 +21,8 @@ module DeviseMultipleTokenAuth
           end
         end
       end
-
-
 end
 
 class ActiveRecord::Base
-  include DeviseMultipleTokenAuth::ActiveRecord::Base
+  include DeviseMultipleTokenAuth
 end

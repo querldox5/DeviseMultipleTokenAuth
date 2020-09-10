@@ -1,5 +1,6 @@
 module DeviseMultipleTokenAuth
-  include Dynamoid::Document
+  module Dynamoid
+    module Document
 
       def self.included(base)
         base.extend(ClassMethods)
@@ -21,6 +22,8 @@ module DeviseMultipleTokenAuth
           end
         end
       end
+    end
+  end
 end
 
 class Dynamoid::Document

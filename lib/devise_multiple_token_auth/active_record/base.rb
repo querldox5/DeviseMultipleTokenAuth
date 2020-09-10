@@ -1,6 +1,5 @@
 module DeviseMultipleTokenAuth
-  module ActiveRecord
-    module Base
+  include Dynamoid::Document
 
       def self.included(base)
         base.extend(ClassMethods)

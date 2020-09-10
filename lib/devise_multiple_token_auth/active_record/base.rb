@@ -22,4 +22,5 @@ module DeviseMultipleTokenAuth
         end
       end
     end
+  end
 end

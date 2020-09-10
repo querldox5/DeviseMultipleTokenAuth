@@ -1,3 +1,4 @@
+require 'dynamoid'
 require "devise_multiple_token_auth/engine"
 require "devise_multiple_token_auth/active_record/base"
 require "devise_multiple_token_auth/version"

@@ -14,7 +14,7 @@ module DeviseMultipleTokenAuth
     end
 
     def insert_into_user_model
-      inject_into_file "app/models/user.rb", after: /^class\sUser < ActiveRecord::Base/ do
+      inject_into_file "app/models/user.rb", after: /^class\sUser/ do
         <<-'RUBY'
 
   # Allows token auth devices to be created by calling user.create_device

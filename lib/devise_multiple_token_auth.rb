@@ -1,5 +1,5 @@
 require "devise_multiple_token_auth/engine"
-#require "devise_multiple_token_auth/active_record/base"
+require "devise_multiple_token_auth/active_record/base"
 require "devise_multiple_token_auth/version"
 #require 'devise_multiple_token_auth/action_controller/base'
 require 'devise_multiple_token_auth/action_controller/api'

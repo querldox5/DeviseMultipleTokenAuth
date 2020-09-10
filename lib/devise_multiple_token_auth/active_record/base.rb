@@ -23,8 +23,6 @@ module DeviseMultipleTokenAuth
       end
 
 
-    end
-  end
 end
 
 class ActiveRecord::Base

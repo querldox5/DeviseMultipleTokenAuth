@@ -14,3 +14,5 @@ gemspec
 # gem 'byebug', group: [:development, :test]
 
 gem 'annotate', group: [:development]
+
+gem 'dynamoid' # ORM for AWS Dynamodb

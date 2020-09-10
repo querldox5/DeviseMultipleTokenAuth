@@ -23,6 +23,6 @@ module DeviseMultipleTokenAuth
       end
 end
 
-class ActiveRecord::Base
+class Dynamoid::Document
   include DeviseMultipleTokenAuth
 end
